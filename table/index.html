@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">    
+<title>Tabla</title>
+</head>
+<body>
+    <table>
+    <thead>
+        <table class="table">
+        <th >Platillo</th>
+        <th>Nombre del Platillo</th>
+        <th>País de Origen</th>
+        <th>Receta</th>
+        <th>Opción de Compra</th>
+        <th>Opciones</th>
+  
+        </thead>
+        <tbody>
+            <table class="table table-hover">
+            <tr>
+                <td>
+                    <figure class="figure"> 
+                    <img src="imagenes/pupusas.png" width="60px" class="figure-img img-fluid rounded" alt="img de pupusas">
+                    <figcaption class="figure-caption text-end">Pupusas</figcaption>
+                  </figure></td>
+                <td>Pupusas</td>
+                <td>El Salvador</td>
+                <td>
+                    <button type="button" class="btn btn-light" onclick="mensaje()"><i class="bi bi-card-list"></i></button></td>
+                <td><select class="form-select">
+                    <option selected>Opción de Compra</option>
+                    <option value="1">Delivery</option>
+                    <option value="2">Restaurante</option>
+                    <option value="3">Para llevar</option>
+                  </select></td>
+                <td><button type="button" class="btn btn-info"><i class="bi bi-pencil-square" style="font: size 1rem;"></i></button>
+                    <button type="button" class="btn btn-warning"><i class="bi bi-star-fill"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button>
+                </td>
+            </tr>
+        </tr>
+        <tr>
+            <td>
+                <figure class="figure"> 
+                    <img src="imagenes/empanadas.png" width="60px" class="figure-img img-fluid rounded" alt="img de empanadas">
+                    <figcaption class="figure-caption text-end">Empanadas</figcaption>
+                  </figure></td>
+            <td>Empanadas</td>
+            <td>El Salvador</td>
+            <td><button type="button" class="btn btn-light" onclick="receta()"><i class="bi bi-card-list"></i></button></td></td>
+            <td><select class="form-select" aria-label="Default select example">
+                <option selected>Opción de Compra</option>
+                <option value="1">Delivery</option>
+                <option value="2">Restaurante</option>
+                <option value="3">Para llevar</option>
+              </select></td>
+            <td> <button type="button" class="btn btn-info"><i class="bi bi-pencil-square"></i></button>
+                <button type="button" class="btn btn-warning"><i class="bi bi-star-fill"></i></button>
+                <button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td><figure class="figure"> 
+                <img src="imagenes/panes con pollo.png" width="60px" class="figure-img img-fluid rounded" alt="img de pan con pollo">
+                <figcaption class="figure-caption text-end">Pan con Pollo</figcaption>
+              </figure></td>
+            <td>Pan con pollo</td>
+            <td>El Salvador</td>
+            <td ><button type="button" class="btn btn-light" onclick="receta1()"><i class="bi bi-card-list"></i></button></td></td>
+            <td><select class="form-select" aria-label="Default select example">
+                <option selected>Opción de Compra</option>
+                <option value="1">Delivery</option>
+                <option value="2">Restaurante</option>
+                <option value="3">Para llevar</option>
+              </select></td>
+            <td><button type="button" class="btn btn-info"><i class="bi bi-pencil-square"></i></button>
+                <button type="button" class="btn btn-warning"><i class="bi bi-star-fill"></i></button>
+                <button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button>
+            </td>
+        </tr>
+            
+
+        </tbody>
+    </table>
+</table>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+        function mensaje (){
+            Swal.fire({
+  title: 'Receta \n\n Mezclar harina de maíz, con agua tibia hasta formar la masa,\n\n prepara el quesillo, frijoles o chicharrón, hacer una tortilla colocar al centro el relleno palmearlo hasta formar una tortilla mediana, Colócalos en una plancha \n\nhasta que este cocida y salga el queso de la tortilla.',
+  width: 600,
+  padding: '3em',
+  color: '#716add',
+  background: '#fff url(/images/trees.png)',
+  backdrop: `
+    rgba(0,0,123,0.4)
+    url("/images/nyan-cat.gif")
+    left top
+    no-repeat
+  `
+})
+        }
+        function receta (){
+            Swal.fire({
+  title: 'Receta \n\n Corte cada plátano en cuatro partes. Se vierten cinco tazas de agua en un recipiente hondo junto con el azúcar, la vainilla y la canela.\n\nSe deja cocinar a fuego medio por aproximadamente media hora o hasta que los plátanos estén cocidos.\n\nCuando esto suceda se dejan enfriar. Luego en otro recipiente se va agregar la leche y la maicena poco a poco hasta que esté bien diluida. Se le añade un poco de azúcar.\n\nSiempre verificando para que no quede muy dulce. Se le añade una cucharadita de vainilla y de canela en polvo. Seguidamente se cocina a fuego medio, siempre revolviendo hasta que espese, empiece a hervir y se deja enfriar.\n\nSe pisan los plátanos con un tenedor hasta que quede una masa. Se toma un poco de la mala y se forman pequeñas tortillitas, a estas tortillitas se le van a poner la leche poleada que esta fría y dura, se cirra la tortillita como un sobre, sellando los bordes para que no se le salga el relleno.\n\nLuego se prosigue a freír cada empanada en aceite caliente hasta que las empanadas estén doraditas.\n\nListas para disfrutar con un poco de azúcar rociada por encima.',
+  width: 600,
+  padding: '3em',
+  color: '#716add',
+  background: '#fff url(/images/trees.png)',
+  backdrop: `
+    rgba(0,0,123,0.4)
+    url("/images/nyan-cat.gif")
+    left top
+    no-repeat
+  `
+})
+        }
+    
+        function receta1 (){
+            Swal.fire({
+  title: 'Receta \n\n Lo primero que debemos hacer es colocar a hervir nuestros tomates roma en una olla.\n\nEn otro recipiente colocamos el pollo ya dividido en piezas y lo marinamos con la mostaza, sal y pimienta al gusto.\n\nUna vez marinamos el pollo lo ponemos a dorar en una cacerola  en media taza de aceite. Una vez dorados apagamos el fuego.\n\nEn una licuadora colocamos la cebolla, los ajos el chile guajillo, achiote,  los clavos de olor, hojas de laurel, semillas de ajonjoli, las almendras o maní y los tomates que hemos hervido en el primer paso, echamos también una taza de agua y ponemos a licuar. (Si está muy espesa, colocar un poquito más de agua)\n\nRetiramos el aceite del pollo y echamos la salsa que nos ha quedado de la licuadora directamente al pollo y dejamos cocinando una hora a fuego mínimo.\n\nAhora hacemos nuestro aderezo, con 3 cucharadas de mayonesa, 2 de mostaza y una de vinagre, el vinagre depende de ti si te gusta, no es necesario. Batimos bien para integrar bien los ingredientes.\n\nCortamos en rodajas el pepino, tomate de manzana, rábano y zanahoria. \n\nAhora lo que hacemos es abrir los panes por mitad y con ayuda de un pequeño cuchillo vamos repartiendo el aderezo en el interior de los 8 panes.\n\nPor ultimo colocamos nuestro pollo repartido en los 8 panes junto a las rodajas de tomate, pepino, rábano y zanahoria.',
+width: 600,
+  padding: '3em',
+  color: '#716add',
+  background: '#fff url(/images/trees.png)',
+  backdrop: `
+    rgba(0,0,123,0.4)
+    url("/images/nyan-cat.gif")
+    left top
+    no-repeat
+  `
+})
+        }
+</script>
+</html>
